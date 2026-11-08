@@ -1,0 +1,16 @@
+backend/.venv/
+backend/app/__pycache__/
+backend/tests/__pycache__/
+**/__pycache__/
+*.py[cod]
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+
+# Local-only development artifacts and logs
+*.log
+
+# Keep real environment files out of Git; example templates may be committed
+.env
+.env.*
+!.env.example
