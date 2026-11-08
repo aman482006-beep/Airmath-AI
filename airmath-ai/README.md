@@ -39,14 +39,14 @@ airmath-ai/
 ```bash
 cd airmath-ai/backend
 python -m venv .venv
-.venv\Scripts\activate
+.venv\\Scripts\\activate
 pip install -r requirements.txt
 ```
 
-Start the API:
+Start the API locally (bound to this computer only):
 
 ```bash
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
 Health check:
@@ -104,6 +104,8 @@ The built-in tutor responds from the solved context without needing a separate L
    cd airmath-ai/backend
    uvicorn app.main:app --host 0.0.0.0 --port 8000
    ```
+
+   The `0.0.0.0` binding is for a server/container environment only. Do not use it for local laptop development.
 
 4. Set production environment variables:
 
